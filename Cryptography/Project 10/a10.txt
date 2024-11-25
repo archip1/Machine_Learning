@@ -1,0 +1,54 @@
+Question 4
+
+Method 1 - SSDs:
+		Bg   Nl   En   Fr   De   El   It   Pl   Ru   Es
+
+Bulgarian	7    0    0    0    0    0    0    0    2    0
+
+Dutch		0    9    0    0    0    0    0    0    0    0
+
+English		1    0    5    0    0    0    2    0    0    1 -
+
+French		0    0    0    8    0    0    0    0    0    1
+
+German		0    1    1    0    7    0    0    0    0    0
+
+Greek		0    0    0    0    0    8    0    0    1    0
+
+Italian		0    0    0    0    0    0    9    0    0    0
+
+Polish		0    0    0    0    0    0    0    9    0    0 -
+
+Russian		0    0    1    0    0    0    0    0    8    0
+
+Spanish		0    0    0    1    0    0    1    0    0    7
+
+
+Method 2 - DPD:
+		Bg   Nl   En   Fr   De   El   It   Pl   Ru   Es
+
+Bulgarian	9    0    0    0    0    0    0    0    0    0
+
+Dutch		0    9    0    0    0    0    0    0    0    0
+
+English		0    1    8    0    0    0    0    0    0    0
+
+French		0    0    0    8    0    0    0    0    0    1
+
+German		0    0    0    0    9    0    0    0    0    0
+
+Greek		0    0    0    0    0    9    0    0    0    0
+
+Italian		0    0    0    0    0    0    9    0    0    0
+
+Polish		0    0    0    0    0    0    0    9    0    0
+
+Russian		0    0    0    0    0    0    0    1    8    0
+
+Spanish		0    0    0    0    0    0    0    0    0    9
+
+
+- There are many patterns in the matrices. For example, we can observe that Dutch, Italian, and Polish are not mistaken  by any other languages. 
+- We also observe that French and Spanish are generally confused for each other as they are similar to each other this conclusion is drawn from both matrices. 
+- We can see the similarities in Russian and Greek as well. 
+- We don't see a good score for English and that's bcz English comes from many languages like Italian, Bulgarian, Spanish etc and in the method 1, we clearly see that.

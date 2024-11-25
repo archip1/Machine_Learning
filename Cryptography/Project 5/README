@@ -1,0 +1,29 @@
+Name: Archi Patel
+SID:
+CCID: archi1
+CMPUT 331, Fall 2023
+
+Assignment 5
+
+Files Included:
+a5p1.py
+a5p2.py
+README
+
+Running Instructions:
+
+Write: depending on the part (1/2) you want to test
+
+python3 -i  a5p1.py
+freqDict("letters")['letter']
+freqDecrypt()
+
+python3 -i  a5p2.py
+evalDecipherment(text1, text2)
+
+Notes and Assumptions:
+- na
+
+Acknowledgements:
+- Used the starter code
+- Used the videos put on eclass to understand

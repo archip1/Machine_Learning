@@ -1,0 +1,17 @@
+Name: Archi Patel
+SID:
+CCID: archi1
+CMPUT 331, Fall 2023
+
+Assignment 8:
+
+
+Notes and Assumptions:
+- p1 works
+- p2 works with a different implementation bcz ngrams approach did not work, it is still there in the comments
+
+Acknowledgements:
+- Used the starter code
+- Used the videos and code put on eclass to understand
+- Vigenere cipher from textbook 
+- used line of code from either geeks for geek or chat gpt to sort dictionary in a special way all reference in the code

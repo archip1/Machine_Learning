@@ -1,0 +1,27 @@
+Name: Archi Patel
+SID:
+CCID: archi1
+CMPUT 331, Fall 2023
+
+Assignment 4
+
+Files Included:
+a4p2.py
+a4p3.py
+a4.txt
+README
+All other modules from the textbook
+
+Running Instructions:
+
+Write: depending on the part (2/3) you want to test
+
+Run functions with inputs.
+
+Notes and Assumptions:
+- Assumed for part 2 that the trial case shud print since thats how it was given to us and not an assert statement
+
+Acknowledgements:
+- Used the code put on eclass for reference and the textbook to understand
+- Used the starter code
+- Used the videos put on eclass to understand

@@ -1,0 +1,28 @@
+Name: Archi Patel
+SID: 
+CCID: archi1
+CMPUT 331, Fall 2023
+
+Assignment 1
+
+Files Included:
+a1p1.py
+a1p2.py
+a1p3.py
+A1.pdf
+README
+
+Running Instructions:
+
+Write: depending on the part (1/2/3) you want to test with a message and key as a string
+
+python3 -i  a1p1.py
+test(); encrypt(message, key)
+
+Notes and Assumptions:
+- The letters argument can be changed in the get_map function to change the letters used in the dictionaries
+
+Acknowledgements:
+- Used the ceaser cipher code put on eclass for reference
+- Used the starter code
+- Used the videos put on eclass to understand

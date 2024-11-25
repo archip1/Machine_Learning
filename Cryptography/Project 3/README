@@ -1,0 +1,31 @@
+Name: Archi Patel
+SID:
+CCID: archi1
+CMPUT 331, Fall 2023
+
+Assignment 3
+
+Files Included:
+a3p2.py
+a3p4.py
+a3.pdf
+README
+
+Running Instructions:
+
+Write: depending on the part (2/4) you want to test
+
+python3 -i  a2p2.py
+random generator(a, b, c, m, r0, r1, n)
+
+python3 -i  a2p4.py
+crack rng(m, sequence)
+
+Notes and Assumptions:
+- na
+
+Acknowledgements:
+- Used the affine code put on eclass for reference and the textbook to understand
+- Used the starter code
+- Used the videos put on eclass to understand
+- Used the TAs pseudocode presented in class

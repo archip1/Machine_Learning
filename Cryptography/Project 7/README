@@ -1,0 +1,20 @@
+Name: Archi Patel
+SID:
+CCID: archi1
+CMPUT 331, Fall 2023
+
+Assignment 7:
+
+Files Included:
+a7p1.py
+a6p234.py
+README
+
+Notes and Assumptions:
+- p1 works for sure just dont know if it inserts another x in the same place.
+
+Acknowledgements:
+- Used the starter code
+- Used the videos and code put on eclass to understand
+- Vigenere cipher from textbook 
+- used line of code from either geeks for geek or chat gpt to sort dictionary in a special way for p4
