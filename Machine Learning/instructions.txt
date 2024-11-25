@@ -1,0 +1,2 @@
+Julia
+import Pluto; Pluto.run(notebook="A1.jl")
