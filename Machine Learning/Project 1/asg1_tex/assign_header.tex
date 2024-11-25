@@ -1,0 +1,68 @@
+\usepackage{fancyhdr,multicol}
+\usepackage{amsmath,amssymb}
+\usepackage{graphicx}
+\usepackage{hyperref}
+
+
+%% Custom page layout.
+\setlength{\textheight}{\paperheight}
+\addtolength{\textheight}{-2in}
+\setlength{\topmargin}{-.5in}
+\setlength{\headsep}{.5in}
+\addtolength{\headsep}{-\headheight}
+\setlength{\footskip}{.5in}
+\setlength{\textwidth}{\paperwidth}
+\addtolength{\textwidth}{-2in}
+\setlength{\oddsidemargin}{0in}
+\setlength{\evensidemargin}{0in}
+\flushbottom
+
+\allowdisplaybreaks
+
+%% Custom headers and footers.
+\pagestyle{fancyplain}
+\let\headrule=\empty
+\let\footrule=\empty
+\lhead{\fancyplain{}{\semester}}
+\rhead{\fancyplain{}{CMPUT 267: Basics of Machine Learning}}
+\cfoot{{\thepage/\pageref{EndOfAssignment}}}
+
+%% Macros to generate question and part numbers automatically
+\newcounter{totalmarks}
+\setcounter{totalmarks}{0}
+\newcounter{questionnumber}
+\setcounter{questionnumber}{0}
+\newcounter{subquestionnumber}[questionnumber]
+\setcounter{subquestionnumber}{0}
+\renewcommand{\thesubquestionnumber}{(\alph{subquestionnumber})}
+\newcommand{\question}[2][]%
+  {\ifx\empty#2\empty\else
+   \addtocounter{totalmarks}{#2}\refstepcounter{questionnumber}\fi
+   \bigskip\noindent\textbf{\Large Question \thequestionnumber. } #1
+   {\scshape\ifx\empty#2\empty(continued)\else
+   [#2 mark\ifnum #2 > 1 s\fi]\fi}\par
+   \medskip\noindent\ignorespaces}
+\newcommand{\subquestion}[2][]%
+  {\ifx\empty#2\empty\else\refstepcounter{subquestionnumber}\fi
+   \medskip\noindent\textbf{\large \thesubquestionnumber } #1
+   {\scshape\ifx\empty#2\empty(continued)\else
+   [#2 mark\ifnum #2 > 1 s\fi]\fi}
+   \smallskip\noindent\ignorespaces}
+\newcommand{\bonus}[2][]%
+  {\ifx\empty#2\empty\else
+   \refstepcounter{questionnumber}\fi
+   \bigskip\noindent\textbf{\Large Bonus (mandatory for 566). } #1
+   {\scshape\ifx\empty#2\empty(continued)\else
+   [#2 mark\ifnum #2 > 1 s\fi]\fi}\par
+   \medskip\noindent\ignorespaces}
+
+
+% \newcommand{\bonus}[2][]%
+%   {\bigskip\noindent\textbf{\Large Bonus (mandatory for 566). } #1
+%    {\scshape\ifx\empty#2\empty(continued)\else
+%    [#2 mark\ifnum #2 > 1 s\fi]\fi}\par
+%    \medskip\noindent\ignorespaces}
+
+% Enable final count to be printed at top
+\usepackage{totcount}
+\regtotcounter{totalmarks}

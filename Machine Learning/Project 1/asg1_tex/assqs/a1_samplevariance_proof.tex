@@ -1,0 +1,17 @@
+\question{25}
+
+We have talked about the fact that the sample mean estimator $\bar{X} = \frac{1}{n} \sum_{i=1}^n X_i$ is an unbiased estimator
+of the mean $\mu$ for identically distributed $X_1, X_2, \ldots, X_n$: $\mathbb{E}[\bar{X}] = \mu$. 
+The straightforward variance estimator, on the other hand, is not an unbiased estimate of the true variance $\sigma^2$: for $\bar{V}_b = \frac{1}{n} \sum_{i=1}^n (X_i - \bar{X})^2$, we get that $ \mathbb{E}[\bar{V}_b] = (1-\tfrac{1}{n}) \sigma^2$.
+Instead, the following bias-corrected sample variance estimator is unbiased: $\bar{V} = \frac{1}{n-1} \sum_{i=1}^n (X_i - \bar{X})^2$. This unbiased estimator is typically what is called the \emph{sample variance}. 
+
+\subquestion{15}
+Use the fact that $\mathbb{E}[\bar{V}] =  \sigma^2$ to show that $\mathbb{E}[\bar{V}_b] = (1-\tfrac{1}{n}) \sigma^2$. \textbf{Hint:} The proof is short, it can be done in a few lines. 
+
+\subquestion{10}
+We also discussed the variance of the sample mean estimator, and concluded that $\text{Var}[\bar{X}] = \frac{1}{n} \sigma^2$, for iid variables with variance $\sigma^2$. We can similarly ask what the variance is of the sample variance estimator. Deriving the formula is a bit more complex for general random variables, so let's assume the $X_i$ are zero-mean Gaussian. For zero-mean Gaussian $X_i$, we can use $\bar{V} = \frac{1}{n} \sum_{i=1}^n X_i^2$, which is unbiased, i.e., $\mathbb{E}[\bar{V}] = \sigma^2$. (Note that this $\bar{V}$ is different from 5a. Here the estimator subtracts the \textbf{true mean}, which we know is zero, from each sample. The previous estimator subtracted the \textbf{sample mean}. This is why this estimator is unbiased although it divides the sum by $n$ while the previous estimator had to divide the sum by $n-1$ to be unbiased). Then we know that the following is true (though we omit the derivation):
+$ \text{Var}[\bar{V}] = \frac{2(n-1)}{n^2} \sigma^4$.
+
+This variance enables us to use Chebyshev's inequality, to get a confidence estimate. Recall that Chebyshev's inequality states that for a random variable $Y$ with known variance $v$, we know that $\text{Pr}(| Y - \mathbb{E}[Y] | < \epsilon  ) > 1 - v/\epsilon^2$. 
+After seeing 10 samples from a distribution, do you think you will have a tighter confidence estimate around the sample mean $\bar{X}$ or the sample variance $\bar{V}$? Explain why.
+\textbf{Hint:} See Chapter 3.2

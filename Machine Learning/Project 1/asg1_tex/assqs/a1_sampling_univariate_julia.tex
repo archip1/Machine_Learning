@@ -1,0 +1,36 @@
+
+\question{35}
+
+To better visualize random variables and get some intuition for
+sampling, this question involves some simple simulations, which is a
+central theme in machine learning. You will also get some experience
+using \verb+julia+ and \verb+pluto notebooks+, which you will also
+need to use in later assignments. Complete the attached notebook
+\verb+A1.jl+ and follow the \verb+instructions.md+ to get setup.
+
+
+For the first two questions, the goal is to understand how much estimators themselves can vary: how different our estimate
+would have been under a different randomly sampled dataset. In the real world, we do not get to obtain different estimators, we will only have one; in this controlled setting, though, we can actually simulate how different the estimators could be. 
+
+For the second two questions, the goal is to understand how we to obtain confidence intervals for our single sample average estimator. 
+
+\subquestion{5}
+Fill in the code to calculate the samples mean, variance, and standard deviation
+of a vector of numbers. Do not use any packages not already loaded!
+Note that for the remainder of this question you will actually only use the sample mean outputted by your code, and will reason about the variability in this sample mean estimator. However, we get you to implement all three, for a bit of a practice. 
+
+\subquestion{7}
+Run the code for 10 samples with $\mu=0$ and $\sigma^2 = 1.0$. Write down the sample average that you obtain. 
+Now do this another 4 times, giving you 5 estimates of the sample average $M_1, M_2, M_3, M_4$ and $M_5$. 
+What is the sample variance of these 5 estimates? Use the unbiased sample variance formula, $\bar{V} = \frac{1}{n-1} \sum_{i=1}^n (M_i - \bar{M})^2$. Note that here we want to understand the variability of the mean estimator itself, if it had been run on different datasets; beautifully we can actually simulate this using synthetic data. 
+
+\subquestion{7}
+Now run the same experiment, but use \textbf{100 samples} for each sample average estimate. What is the sample variance of these 5 estimates?
+How is it different from the variance when you used 10 samples to compute the estimates?
+
+\subquestion{8}
+Now let us consider a higher variance situation, where $\sigma^2 = \textbf{10.0}$. Imagine you know this variance, and that the data comes from a Gaussian, but that you do not know the true mean. Run the code to get \textbf{30 samples}, and compute one sample average $M$. What is the 95\% confidence interval around this $M$? Give actual numbers.
+
+\subquestion{8}
+Now assume you know less: you \textbf{do not know} the data is Gaussian, though you still know the variance is $\sigma^2 = 10.0$.
+Use the same 30 samples from (d) and resulting sample average $M$. Give a 95\% confidence interval around $M$, now without assuming the samples are Gaussian. 
