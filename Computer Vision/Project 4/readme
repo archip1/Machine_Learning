@@ -1,0 +1,5 @@
+run the submission file with this cell running before it on google collab:
+
+!pip install ultralytics
+!pip install segmentation-models-pytorch
+%run A4_main.py
